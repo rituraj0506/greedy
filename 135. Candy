@@ -9,6 +9,8 @@ Example 1:
 Input: ratings = [1,0,2]
 Output: 5
 Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
+if [1,2,3,4] no prob we cal it check rating[i-1]<rating[i] and calcul it
+but if like arr[1,0,2] dec then inc or inc then dec in this case we iterate from left and right then cal max of these
 
  int candy(vector<int>& ratings) {
         int n=ratings.size();
